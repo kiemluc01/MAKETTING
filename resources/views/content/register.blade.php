@@ -21,7 +21,7 @@
                 <input type="text" name="company" id="company" placeholder="Công ty ABC">
             </div>
             <div class="address">
-                <h5>Địa chỉ <p class="Obligatory">*</p></h5>
+                <h5>Địa chỉ</h5>
                 <input type="text" name="address" id="address" placeholder="">
             </div>
             <div class="field">
@@ -39,10 +39,12 @@
             <div class="password">
                 <h5>Mật khẩu <p class="Obligatory">*</p></h5>
                 <input type="password" name="password" id="password" placeholder="">
+                <img src="{{ asset('images/show.png') }}" alt="" id="hide_show_pass">
             </div>
             <div class="confirm-pass">
                 <h5>Xác nhận mật khẩu <p class="Obligatory">*</p></h5>
-                <input type="password" name="confirm-pass" id="confirm-pass" placeholder="">
+                <input type="password" name="confirm-pass" id="confirm_pass" placeholder="">
+                <img src="{{ asset('images/show.png') }}" alt="" id="hide_show_cfpass">
             </div>
             <div class="SDT">
                 <h5>Số điện thoại <p class="Obligatory">*</p></h5>
@@ -57,5 +59,35 @@
             </div>
         </form>
     </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide_show_pass').click(function(){
+                if(document.getElementById('password').type == 'password'){
+                    document.getElementById('password').type ='text'
+                    document.getElementById('hide_show_pass').src = String(document.getElementById('hide_show_pass').src).replace('show','hide')
+                }
+                    
+                else{
+                    document.getElementById('password').type ='password'
+                    document.getElementById('hide_show_pass').src=String(document.getElementById('hide_show_pass').src).replace('hide','show')
+                }
+                    
+            })
+            $('#hide_show_cfpass').click(function(){
+                if(document.getElementById('confirm_pass').type == 'password'){
+                    document.getElementById('confirm_pass').type ='text'
+                    document.getElementById('hide_show_cfpass').src = String(document.getElementById('hide_show_cfpass').src).replace('show','hide')
+                }
+                    
+                else{
+                    document.getElementById('confirm_pass').type ='password'
+                    document.getElementById('hide_show_cfpass').src=String(document.getElementById('hide_show_cfpass').src).replace('hide','show')
+                }
+                    
+            })
+        })
+    </script>
 </body>
 </html>

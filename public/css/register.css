@@ -15,11 +15,20 @@ div.register {
 
 form.register div {
     margin-bottom: 20px;
+    position: relative;
 }
 
 form.register div h5,
 form.register div p {
     display: inline-block;
+}
+
+form.register div img {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 38px;
+    left: 83%;
 }
 
 form.register div h5 {
