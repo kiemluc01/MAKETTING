@@ -73,7 +73,7 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+              <a href=".?option=staff" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
@@ -88,27 +88,27 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
+                  <a href=".?option=staff&sub_option=layouts-without-menu" class="menu-link">
                     <div data-i18n="Without menu">Without menu</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-without-navbar.html" class="menu-link">
+                  <a href=".?option=staff&sub_option=layouts-without-navbar" class="menu-link">
                     <div data-i18n="Without navbar">Without navbar</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-container.html" class="menu-link">
+                  <a href=".?option=staff&sub_option=layouts-container" class="menu-link">
                     <div data-i18n="Container">Container</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-fluid.html" class="menu-link">
+                  <a href=".?option=staff&sub_option=layouts-fluid" class="menu-link">
                     <div data-i18n="Fluid">Fluid</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-blank.html" class="menu-link">
+                  <a href=".?option=staff&sub_option=layouts-blank" class="menu-link">
                     <div data-i18n="Blank">Blank</div>
                   </a>
                 </li>
