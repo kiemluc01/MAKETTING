@@ -150,7 +150,7 @@
             <th>Sản phẩm</th>
           </tr>
         </thead>
-        <tbody class="table-border-bottom-0">
+        <tbody class="table-border-bottom-0" id="tbody">
           <tr>
             <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Nhu cầu 1</strong></td>
             <td>Mô tả công việc</td>
