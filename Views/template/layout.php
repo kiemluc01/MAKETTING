@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAKETTING</title>
     <link rel="stylesheet" href="Public/css/register.css">
+    <link rel="stylesheet" href="Public/css/login.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
@@ -127,25 +128,25 @@
 
             <!-- Layouts -->
             <li class="menu-item">
-              <a href="" class="menu-link">
+              <a href=".?option=staff&sub_option=products" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">Quản lí sản phẩm</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="" class="menu-link">
+              <a href=".?option=staff&sub_option=customers" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user"></i>
                 <div data-i18n="Layouts">Quản lí Khách hàng</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="" class="menu-link">
+              <a href=".?option=staff&sub_option=demand" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">Quản lí nhu cầu</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="" class="menu-link">
+              <a href=".?option=staff&sub_option=works" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">Quản lí công việc</div>
               </a>

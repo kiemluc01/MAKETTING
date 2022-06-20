@@ -43,7 +43,7 @@ function loadComponent()
             $pathcom = $pathcom . 'index.php';
         }
     } else {
-        $pathcom = $pathcom . 'home/index.php';
+        $pathcom = $pathcom . 'login/index.php';
     }
     
     if (file_exists($pathcom)) {
