@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "", "dapm1");
+$connect = mysqli_connect("localhost", "root", "", "maketing");
 mysqli_query($connect, "SET NAMES 'utf8'");
 if(isset($_REQUEST['idsp'])){
     $id = $_REQUEST['idsp'];
