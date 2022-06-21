@@ -19,21 +19,23 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>HÌnh ảnh</th>
-                    <th>Tên sản phẩm</th>
+                    <th>Tên công việc</th>   
+                    <th>ngày bắt đầu</th>
+                    <th>Ngày kết thúc</th>
                     <th>Trạng thái</th>
-                    <th>Mô tả</th>
-                    <th>giá bán</th>
+                    <th>Độ ưu tiên</th> 
+                    <th>Phân loại</th>
                     <th>Chức năng</th>
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0" id="tbody">
                 <tr>
-                    <td><img src="" alt="Hình ảnh"></td>
-                    <td>Sản phẩm 1</td>
-                    <td>Trạng thái</td>
-                    <td>mô end tả</td>
-                    <td>100000000VNĐ</td>
+                    <td>Công việc 1</td>
+                    <td>1/6/2022</td>
+                    <td>1/7/2022</td>
+                    <td>Đang thực hiện</td>
+                    <td>Cao</td>
+                    <td>Nội bộ</td>
                     <td>
                         <input type="submit" value="Xóa" class="btn btn-danger">
                         <input type="submit" value="Sửa" class="btn btn-warning">

@@ -6,12 +6,6 @@
                 <h3 class="card-header">Nhu cầu</h3>
                 <button class="btn btn-primary" style="height: 50px!important;margin:10px!important; "><b style="color: #FFF;">+</b> Nhu cầu</button>
             </div>
-            <div class="fillter" style="display:flex;">
-                <h3 class="card-header">Lĩnh vực</h3>
-                <select name="trangthai" id="trangthai" class="btn btn-primary dropdown-toggle show" style="height: 50px!important;margin:10px!important;">
-                    <option value="Đang thực hiện">Đang thực hiện</option>
-                </select>
-            </div>
         </div>
     </div>
     <div class="card">
@@ -19,227 +13,19 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Tên KH</th>
-                    <th>Email</th>    
-                    <th>SĐT</th>
-                    <th>Lĩnh vực</th>
-                    <th>Tên công ty</th>
-                    <th>Địa chỉ</th>
+                    <th>Tên nhu cầu</th>   
+                    <th>ngày bắt đầu</th>
+                    <th>Ngày kết thúc</th>
+                    <th>Trạng thái</th>
                     <th>Chức năng</th>
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0" id="tbody">
                 <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
+                    <td>Nhu cầu 1</td>
+                    <td>1/6/2022</td>
+                    <td>1/7/2022</td>
+                    <td>Đang thực hiện</td>
                     <td>
                         <input type="submit" value="Xóa" class="btn btn-danger">
                         <input type="submit" value="Sửa" class="btn btn-warning">
