@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "", "dapm1");
+$connect = mysqli_connect("localhost", "root", "", "marketing");
 mysqli_query($connect, "SET NAMES 'utf8'");
 if (isset($_REQUEST['pass']) && isset($_REQUEST['user'])) {
     $user = $_REQUEST['user'];
