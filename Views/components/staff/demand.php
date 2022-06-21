@@ -21,16 +21,26 @@
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0" id="tbody">
-                <tr>
-                    <td>Nhu cầu 1</td>
-                    <td>1/6/2022</td>
-                    <td>1/7/2022</td>
-                    <td>Đang thực hiện</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
+            <?php 
+                        $DM = loadModel('Demand');
+                        $result = $DM->getall();
+                        if(mysqli_num_rows($result)>0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                ?>
+                                <tr>
+                                    <td><?php echo $row['TenNhuCau']; ?></td>
+                                    <td><?php echo $row['NgayBatDau']; ?></td>
+                                    <td><?php echo $row['NgayKetThuc']; ?></td>
+                                    <td><?php echo $row['TrangThai']; ?></td>
+                                    <td>
+                                        <input type="submit" value="Xóa" class="btn btn-danger" id="xoa" idNC="<?php echo $row['ID_NhuCau']; ?>">
+                                        <input type="submit" value="Sửa" class="btn btn-warning" id="sua" idNC="<?php echo $row['ID_NhuCau']; ?>">
+                                    </td>
+                                </tr>
+                                <?php
+                            }
+                        }
+                    ?>
             </tbody>
         </table>
         </div>

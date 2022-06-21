@@ -29,18 +29,28 @@
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0" id="tbody">
-                <tr>
-                    <td>Công việc 1</td>
-                    <td>1/6/2022</td>
-                    <td>1/7/2022</td>
-                    <td>Đang thực hiện</td>
-                    <td>Cao</td>
-                    <td>Nội bộ</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
+            <?php 
+                $CV = loadModel('Work');
+                $result = $CV->getall();
+                if(mysqli_num_rows($result)>0){
+                    while($row = mysqli_fetch_assoc($result)){
+                        ?>
+                        <tr>
+                            <td><?php echo $row['TenCongViec']; ?></td>
+                            <td><?php echo $row['NgayBatDau']; ?></td>
+                            <td><?php echo $row['NgayKetThuc']; ?></td>
+                            <td><?php echo $row['TrangThai']; ?></td>
+                            <td><?php echo $row['DoUuTien']; ?></td>
+                            <td><?php echo $row['PhanLoai']; ?></td>
+                            <td>
+                                <input type="submit" value="Xóa" class="btn btn-danger" id="xoa" idCV="<?php echo $row['ID_CongViec']; ?>">
+                                <input type="submit" value="Sửa" class="btn btn-warning" id="sua" idCV="<?php echo $row['ID_CongViec']; ?>">
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                }
+            ?>
             </tbody>
         </table>
         </div>

@@ -9,7 +9,7 @@
             <div class="fillter" style="display:flex;">
                 <h3 class="card-header">Lĩnh vực</h3>
                 <select name="trangthai" id="trangthai" class="btn btn-outline-primary dropdown-toggle show" style="height: 50px!important;margin:10px!important;">
-                    <option value="Đang thực hiện">Đang thực hiện</option>
+                    <option value="Đang thực hiện">Tất cả</option>
                 </select>
             </div>
         </div>
@@ -20,27 +20,42 @@
             <thead>
                 <tr>
                     <th>Tên KH</th>
-                    <th>Email</th>    
-                    <th>SĐT</th>
-                    <th>Lĩnh vực</th>
-                    <th>Tên công ty</th>
+                    <th>Gới tính</th>    
                     <th>Địa chỉ</th>
-                    <th>Chức năng</th>
+                    <th>Email</th>
+                    <th>SĐT</th>
+                    <th>Tên công ty</th>
+                    <th>Số lượng NV</th>
+                    <th>Doanh Thu</th>
+                    <th>Website</th>
+                    <th>Lĩnh vực</th>
+                    <th>Nguồn</th>
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0" id="tbody">
-                <tr>
-                    <td>Nguyễn Kiêm Lực</td>
-                    <td>kiemluc01@gmail.com</td>
-                    <td>0337825329</td>
-                    <td>Kinh Doanh</td>
-                    <td>UTE</td>
-                    <td>Quảng trị</td>
-                    <td>
-                        <input type="submit" value="Xóa" class="btn btn-danger">
-                        <input type="submit" value="Sửa" class="btn btn-warning">
-                    </td>
-                </tr>
+            <?php 
+                $cus = loadModel('Customer');
+                $result = $cus->getall();
+                if(mysqli_num_rows($result)>0){
+                    while($row = mysqli_fetch_assoc($result)){
+                        ?>
+                        <tr>
+                            <td><?php echo $row['HoTen']; ?></td>
+                            <td><?php echo $row['GioiTinh']; ?></td>
+                            <td><?php echo $row['DiaChi']; ?></td>
+                            <td><?php echo $row['Email']; ?></td>
+                            <td><?php echo $row['SDT']; ?></td>
+                            <td><?php echo $row['TenCongTy']; ?></td>
+                            <td><?php echo $row['SoLuongNV']; ?></td>
+                            <td><?php echo $row['DoanhThuHangNam']; ?></td>
+                            <td><?php echo $row['Website']; ?></td>
+                            <td><?php echo $row['TenLinhVuc']; ?></td>
+                            <td><?php echo $row['TenNguon']; ?></td>
+                        </tr>
+                        <?php
+                    }
+                }
+            ?>
             </tbody>
         </table>
         </div>
